@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Chekout') {
             steps {
-	    checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/elyes97/RepoTest.git']]])
+	    checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/rabebdina/effective-palm-tree.git']]])
         echo 'Building..'        
 	}  
 	}
