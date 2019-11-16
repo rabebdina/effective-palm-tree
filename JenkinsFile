@@ -9,6 +9,7 @@ pipeline {
 	}
         stage('Build') {
             steps {
+	    	bat label: '', script: 'mvn install'
                 echo 'Building..'
             }
         }
